@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projet1_gestion_de_scolarite">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Projet1_gestion_de_scolarite">
+        <activity android:name=".MainActivity2" />
+        <activity
+            android:name=".bulletins"
+            android:exported="false"
+            android:label="Students Bulletins"
+            android:parentActivityName=".GestionNotes"/>
+        <activity
+            android:name=".etudiants"
+            android:exported="false"
+            android:label="Students List"
+            android:parentActivityName=".GestionEtudiants" />
+        <activity
+            android:name=".GestionFiliere"
+            android:exported="false"
+            android:label="Gestion des Filière et Modules"
+            android:parentActivityName=".MainActivity2" />
+        <activity
+            android:name=".GestionNotes"
+            android:exported="false"
+            android:label="Gestion des Notes"
+            android:parentActivityName=".MainActivity2" />
+
+        <activity
+            android:name=".GestionEtudiants"
+            android:exported="false"
+            android:label="Gestion des Etudiants"
+            android:parentActivityName=".MainActivity2" />
+        <activity android:name=".MainActivity3" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
+
